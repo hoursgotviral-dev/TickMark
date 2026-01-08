@@ -1,11 +1,44 @@
-<div align="center">
+# TickMark
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+TickMark provides a professional secure platform combining elite task tracking with a sophisticated and highly organized digital note archive.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Unified Authentication**: Secure JWT-based auth shared across all internal applications.
+- **Super JIRA**: Precision task tracking with priority badges and status management.
+- **Archive (Notes)**: Advanced note-taking with real-time taxonomy/tag filtering and global search.
+- **Premium UI**: Dark-themed aesthetic designed with Tailwind CSS for modern professional workflows.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Prerequisites
 
-</div>
+- Node.js (v18+)
+- MongoDB Atlas Account (or local MongoDB)
+
+## Getting Started
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Configuration**
+   Create a `.env` file in the root directory and add your credentials:
+   ```env
+   MONGO_URI=your_mongodb_atlas_uri
+   JWT_SECRET=your_secure_random_string
+   ```
+
+3. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+
+## Tech Stack
+
+- **Frontend**: React 19, Vite, Tailwind CSS, Axios
+- **Backend**: Node.js, Express
+- **Database**: MongoDB (Mongoose ODM)
+- **Auth**: JWT (JSON Web Tokens) with HttpOnly cookies
+
+---
+© 2025 TickMark. All rights reserved.
